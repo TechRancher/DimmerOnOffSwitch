@@ -1,0 +1,71 @@
+== Dimmer On and Off Switch 
+
+:Project: Dimmer On And Off Switch
+:Author: Jason Sikes
+:AKA: TechRancher
+:Email: https://id.arduino.cc/sikesjay
+:Date: August 09, 2023
+:Revision: 1.0
+
+Title of this project is: {project}
+
+Author is {author}
+
+Also known as: {aka}
+
+Written on: {date}
+
+Version: {revision}
+
+.Description of the project
+This project uses two Pull Up buttons to control an LED. We will make the LED slowly inline by +5 to reach
+255 when we press Button A. Then when we press Button B the LED will slowly decline by +5 to reach 0. We
+will include a Active buzzer into this project. When we reach 255 and the user is still pressing the 
+button A down. We will make the buzzer buzz. Same as when the user presses the button B and keeps pressing
+when the LED is at 0 (Off). This is a simple little project.
+
+.Items Needed
+* Two Push buttons
+* One 330 Ohm Resistor
+* One Red LED
+* One Active Buzzer
+* One Arduino R3 
+* One Breadboard
+* Nine jumper wires
+
+.Circuit Design
+On the breadboard I installed the one push button left legs at column bottom 55 on the second part
+of the breadboard, rows F, G, H, I, and J. The right legs in column bottom 53. The second push button
+left legs in column bottom 45 and the right legs into column bottom 43. I installed the 330 Ohm 
+left leg into column 30 on the rows A, B, C, D, and E. The right leg into column 35. I installed the 
+anode (long leg) of the LED into column 35 and the cathode (short leg) into column 36. Then I 
+installed the active buzzer positive leg into column 40 and the right leg into column 43. I ran the 
+GND jumper from the Arduino to the GND rail on the breadboard. Jumper from Pin 2 to column bottom 55. 
+Jumper from Pin 4 to column 40. Jumper from Pin 5 to column bottom 45. Jumper from Pin 9 to column 30. 
+Jumper from GND rail to column bottom 53. Jumper from GND rail to column bottom 43. Jumper from 
+GND rail to column 36. Jumper from GND rail to column 43. The circuit is now wired up.
+
+.Thumbnail
+image:file:///home/jay/Arduino/practiceCode/DimmerOnOffSwitch/circuitLayout.png[
+"KiCad Schematic",
+link="file:///home/jay/Arduino/practiceCode/DimmerOnOffSwitch/circuitLayout.png"]
+
+
+.Code
+The code for this project is in the file called "DimmerOnOffSwitch.ino".
+
+.What To Expect
+This project will take the button readings to see which button is being pressed. Then it will increase
+the LEDVal by +-5. The adjust the LED according to the LEDVal after the +-5. When the button is held 
+down and the LED hits the max either full bright or off, the active buzzer will tone to let the user 
+that the max has be reached. Fun simple circuit that teaches you some good logic skills to figure out
+the LEDVal and how to use that to make the LED change.
+
+.Licensing Of Code
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+.Contact Me
+If you have any questions feel free to contact me at: {email}
