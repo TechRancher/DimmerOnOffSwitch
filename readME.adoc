@@ -46,9 +46,9 @@ Jumper from GND rail to column bottom 53. Jumper from GND rail to column bottom 
 GND rail to column 36. Jumper from GND rail to column 43. The circuit is now wired up.
 
 .Thumbnail
-image:file:///home/jay/Arduino/practiceCode/DimmerOnOffSwitch/circuitLayout.png[
+image:https://github.com/TechRancher/DimmerOnOffSwitch/blob/main/circuitLayout.png[
 "KiCad Schematic",
-link="file:///home/jay/Arduino/practiceCode/DimmerOnOffSwitch/circuitLayout.png"]
+link="https://github.com/TechRancher/DimmerOnOffSwitch/blob/main/circuitLayout.png"]
 
 
 .Code
